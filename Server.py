@@ -4,7 +4,7 @@ from flask import Flask, send_from_directory, jsonify
 app = Flask(__name__)
 
 # Zenék mappája (tegyél ide MP3 fájlokat Renderen)
-MUSIC_DIR = "music"
+MUSIC_DIR = "."
 
 @app.route("/songs")
 def list_songs():
